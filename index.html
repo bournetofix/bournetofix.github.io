@@ -3,11 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bourne to Fix — Reliable Handyman & Home Repairs</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Bourne to Fix — Reliable Handyman Services</title>
+  <meta name="description" content="Bourne to Fix provides handyman services in Bourne, Thurlby & surrounding areas. Wall repairs, tiling, electrical & plumbing, furniture assembly, painting, garden work and more." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <meta name="description" content="Bourne to Fix — local handyman: repairs, installations, painting, carpentry, plumbing & electrical help. Fast, friendly, insured." />
   <style>
     :root{
       --accent:#0f6eff;
@@ -28,39 +26,27 @@
     nav a{margin-left:18px;color:var(--dark);text-decoration:none;font-weight:600}
     .cta{background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
 
-    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-top:28px}
-    .hero-card{background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(19,24,36,0.06)}
-    h1{font-size:28px;margin:0 0 8px}
-    p.lead{color:var(--muted);margin:0 0 18px}
-    .features{display:flex;gap:10px;flex-wrap:wrap}
-    .chip{background:#f1f6ff;padding:8px 12px;border-radius:999px;font-weight:600;color:var(--accent)}
+    .hero{display:flex;flex-direction:column;gap:12px;margin-top:28px;text-align:center}
+    .hero h1{font-size:32px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
 
-    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
-    .service{background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:12px;border:1px solid rgba(15,14,33,0.04)}
-    .service h3{margin:8px 0 6px}
+    .section{margin-top:40px}
+    h2{font-size:24px;margin-bottom:12px}
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .service{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:0 4px 12px rgba(0,0,0,0.05)}
+    .service h3{margin:0 0 6px;font-size:18px}
     .service p{margin:0;color:var(--muted);font-size:14px}
 
-    .testimonials{display:flex;gap:12px;overflow:auto;padding-bottom:6px}
-    .tcard{min-width:240px;background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(15,14,33,0.04)}
+    .contact-card{background:var(--card);padding:24px;border-radius:var(--radius);box-shadow:0 4px 12px rgba(0,0,0,0.05);max-width:600px;margin:0 auto}
+    .contact-card input, .contact-card textarea, .contact-card button{width:100%;padding:10px;margin-bottom:10px;border-radius:10px;border:1px solid #e6e9ef;font-family:inherit}
+    .contact-card button{background:var(--accent);color:white;font-weight:700;border:none;cursor:pointer}
 
-    form{display:grid;gap:8px}
-    input,textarea,button,select{font-family:inherit;padding:10px;border-radius:10px;border:1px solid #e6e9ef}
-    textarea{min-height:110px;resize:vertical}
-    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    footer{margin-top:40px;padding:24px 0;color:var(--muted);font-size:14px;text-align:center}
 
-    footer{margin-top:30px;padding:24px 0;color:var(--muted);font-size:14px}
-
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .services{grid-template-columns:repeat(2,1fr)}
-    }
     @media (max-width:560px){
-      header{flex-direction:column;align-items:flex-start}
-      .services{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:center;text-align:center}
       nav a{margin-left:10px}
-      .logo{width:48px;height:48px}
     }
-
   </style>
 </head>
 <body>
@@ -70,164 +56,53 @@
         <div class="logo">BF</div>
         <div>
           <div style="font-weight:700">Bourne to Fix</div>
-          <div style="font-size:13px;color:var(--muted)">Trusted local handyman since 2016</div>
+          <div style="font-size:13px;color:var(--muted)">Reliable Handyman Services</div>
         </div>
       </div>
       <nav>
         <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#contact" class="cta">Request a Quote</a>
+        <a href="#contact">Contact</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
       </nav>
     </header>
 
     <section class="hero">
-      <div class="hero-card">
-        <h1>Fast, reliable handyman services — near you</h1>
-        <p class="lead">From small repairs to full installations: carpentry, plumbing, painting, tiling, electrical fixes and more. Licensed, insured, and proud of our 5-star reviews.</p>
-        <div class="features">
-          <div class="chip">Same-day estimates</div>
-          <div class="chip">Transparent pricing</div>
-          <div class="chip">Satisfaction guaranteed</div>
-        </div>
-
-        <div style="margin-top:18px;display:flex;gap:12px;align-items:center">
-          <a href="#contact" class="cta">Get a quote</a>
-          <a href="tel:+447700900000" style="text-decoration:none;color:var(--muted);font-weight:700">📞 +44 7700 900 000</a>
-        </div>
-
-        <div style="margin-top:20px">
-          <h3 style="margin:0 0 8px">Popular services</h3>
-          <div class="services" style="margin-top:8px">
-            <div class="service">
-              <strong>General Repairs</strong>
-              <p>Fixes, adjustments & maintenance — quick and tidy.</p>
-            </div>
-            <div class="service">
-              <strong>Electrical</strong>
-              <p>Light fittings, sockets, switches and safety checks.</p>
-            </div>
-            <div class="service">
-              <strong>Plumbing</strong>
-              <p>Leaks, taps, toilet repairs and unit installations.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <aside style="display:flex;flex-direction:column;gap:12px">
-        <div class="hero-card">
-          <h3 style="margin-top:0">Book an inspection</h3>
-          <form id="quick-book" onsubmit="submitQuick(event)">
-            <input name="name" placeholder="Your name" required />
-            <input name="phone" placeholder="Phone or WhatsApp" required />
-            <select name="service" required>
-              <option value="">Select service</option>
-              <option>General Repair</option>
-              <option>Electrical</option>
-              <option>Plumbing</option>
-              <option>Painting</option>
-              <option>Carpentry</option>
-            </select>
-            <button type="submit" class="cta">Request visit</button>
-          </form>
-          <small style="color:var(--muted)">We will call or message to confirm a convenient time.</small>
-        </div>
-
-        <div class="hero-card">
-          <h4 style="margin:0 0 8px">Pricing snapshot</h4>
-          <div style="display:flex;flex-direction:column;gap:8px">
-            <div style="display:flex;justify-content:space-between"><span>Call-out fee</span><strong>£25</strong></div>
-            <div style="display:flex;justify-content:space-between"><span>Hourly rate</span><strong>from £40/hr</strong></div>
-            <div style="display:flex;justify-content:space-between"><span>Small jobs</span><strong>from £45</strong></div>
-          </div>
-        </div>
-      </aside>
+      <h1>Bourne to Fix</h1>
+      <p>Reliable handyman services in Bourne, Thurlby & surrounding areas. From wall repairs to garden work, we do it all!</p>
+      <a href="#contact" class="cta">Request a Quote</a>
     </section>
 
-    <section id="about" style="margin-top:26px">
-      <div class="hero-card">
-        <h2 style="margin-top:0">About Bourne to Fix</h2>
-        <p style="color:var(--muted)">Bourne to Fix provides friendly, reliable home maintenance for busy homeowners and landlords. Our team is DBS-checked, insured and trained to deliver high-quality workmanship with respect for your home.</p>
-        <div style="display:flex;gap:12px;margin-top:12px">
-          <div style="flex:1">
-            <strong>Years operating</strong>
-            <div>Since 2016</div>
-          </div>
-          <div style="flex:1">
-            <strong>Guarantee</strong>
-            <div>30-day satisfaction guarantee</div>
-          </div>
-        </div>
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service"><h3>Wall Repairs & Stud Wall Building</h3><p>Fix walls, build stud walls, patch damage.</p></div>
+        <div class="service"><h3>Tiling</h3><p>Floor and wall tiling with a professional finish.</p></div>
+        <div class="service"><h3>Small Electrical & Plumbing Jobs</h3><p>Light fittings, sockets, taps, toilets and minor plumbing.</p></div>
+        <div class="service"><h3>Furniture Assembly</h3><p>Flat-pack furniture assembly made easy.</p></div>
+        <div class="service"><h3>Painting & Decorating</h3><p>Interior painting, wallpapering and decorating services.</p></div>
+        <div class="service"><h3>Garden & Tree Work</h3><p>Lawn care, pruning, hedge trimming and small tree work.</p></div>
+        <div class="service"><h3>TV Mounting</h3><p>Secure mounting of TVs on any wall type.</p></div>
+        <div class="service"><h3>Silicone Replacement</h3><p>Bathroom, kitchen and general silicone replacement.</p></div>
+        <div class="service"><h3>General Household Repairs</h3><p>Small repairs around your home, quick and tidy.</p></div>
       </div>
     </section>
 
-    <section id="reviews" style="margin-top:18px">
-      <h3 style="margin:8px 0">What customers say</h3>
-      <div class="testimonials">
-        <div class="tcard">
-          <strong>Anna P.</strong>
-          <div style="color:var(--muted);font-size:14px;margin:8px 0">"Fast, polite and excellent finish. Repaired our kitchen tap the same day."</div>
-          <div style="font-size:13px;color:var(--muted)">Rating: ★★★★★</div>
-        </div>
-        <div class="tcard">
-          <strong>Marcus L.</strong>
-          <div style="color:var(--muted);font-size:14px;margin:8px 0">"Great communication and clean workmanship. Highly recommended."</div>
-          <div style="font-size:13px;color:var(--muted)">Rating: ★★★★★</div>
-        </div>
-        <div class="tcard">
-          <strong>Sara G.</strong>
-          <div style="color:var(--muted);font-size:14px;margin:8px 0">"Repainted our hallway — perfect color match and neat edges."</div>
-          <div style="font-size:13px;color:var(--muted)">Rating: ★★★★☆</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" style="margin-top:20px">
-      <div class="hero-card">
-        <h3 style="margin-top:0">Request a quote or ask a question</h3>
-        <form id="contact-form" onsubmit="submitContact(event)">
-          <div class="grid-2">
-            <input name="name" placeholder="Full name" required />
-            <input name="phone" placeholder="Phone" required />
-          </div>
-          <input name="email" placeholder="Email (optional)" />
-          <textarea name="message" placeholder="Describe the job & location" required></textarea>
-          <div style="display:flex;gap:8px;align-items:center">
-            <button class="cta" type="submit">Send request</button>
-            <a href="mailto:hello@bournetofix.example" style="text-decoration:none;color:var(--muted);font-weight:700">hello@bournetofix.example</a>
-          </div>
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <div class="contact-card">
+        <p>📧 Email: <a href="mailto:bournetofix@gmail.com">bournetofix@gmail.com</a><br>📞 Phone: 07751 771505<br>🌍 Serving Bourne, Thurlby & surrounding areas</p>
+        <form action="mailto:bournetofix@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
 
     <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div>
-          <strong>Bourne to Fix</strong>
-          <div style="color:var(--muted)">Serving your area • Insured & vetted</div>
-        </div>
-        <div style="text-align:right">
-          <div>📞 +44 7700 900 000</div>
-          <div style="color:var(--muted)">© Bourne to Fix — All rights reserved</div>
-        </div>
-      </div>
+      © 2025 Bourne to Fix — All Rights Reserved
     </footer>
   </div>
-
-  <script>
-    function submitQuick(e){
-      e.preventDefault();
-      const f = e.target;
-      alert('Thanks ' + (f.name.value || '') + '! We received your request. We will contact you shortly.');
-      f.reset();
-    }
-    function submitContact(e){
-      e.preventDefault();
-      const f = e.target;
-      alert('Thanks ' + (f.name.value || '') + '! Your message has been sent.');
-      f.reset();
-    }
-  </script>
 </body>
 </html>
