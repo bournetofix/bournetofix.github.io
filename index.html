@@ -11,22 +11,66 @@
       --accent:#0f6eff;
       --dark:#0f1724;
       --muted:#667085;
-      --bg:#f7f9fc;
+      --bg:rgba(247,249,252,0.9); /* slightly transparent for readability */
       --card:#ffffff;
       --radius:14px;
       font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     }
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--dark);-webkit-font-smoothing:antialiased}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
+    body{
+      margin:0;
+      color:var(--dark);
+      -webkit-font-smoothing:antialiased;
+      background:transparent;
+    }
+    body::before {
+      content:"";
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: url('logo.jpg') center/cover no-repeat;
+      opacity:0.3;
+      z-index:-1;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:28px;background:var(--bg)}
 
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      position:relative;
+      z-index:1;
+    }
     .brand{display:flex;align-items:center;gap:14px}
-    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2ad6ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px}
+    .logo{
+      width:56px;
+      height:56px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:12px;
+    }
     nav a{margin-left:18px;color:var(--dark);text-decoration:none;font-weight:600}
     .cta{background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
 
-    .hero{display:flex;flex-direction:column;gap:12px;margin-top:28px;text-align:center}
+    .hero{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin-top:28px;
+      text-align:center;
+      padding:28px;
+      background: rgba(255,255,255,0.85); /* lightened background for readability */
+      border-radius:14px;
+    }
     .hero h1{font-size:32px;margin:0 0 12px}
     .hero p{color:var(--muted);margin:0 0 18px}
 
@@ -53,7 +97,9 @@
   <div class="container">
     <header>
       <div class="brand">
-        <div class="logo">B2F</div>
+        <div class="logo">
+          <img src="logo.jpg" alt="Bourne to Fix Logo" />
+        </div>
         <div>
           <div style="font-weight:700">Bourne to Fix</div>
           <div style="font-size:13px;color:var(--muted)">Reliable Handyman Services</div>
@@ -106,4 +152,3 @@
   </div>
 </body>
 </html>
-
